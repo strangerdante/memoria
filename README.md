@@ -30,16 +30,7 @@ https://memoria-tailwind.netlify.app
 3. Abre el archivo index.html
 
    ```
-
-   ```
-
-## 🚀 Uso
-
-1. Abre el juego en tu navegador:
-   ```bash
-   http://localhost:4321/
-   ```
-2. Sigue las instrucciones en pantalla para jugar.
+4. Sigue las instrucciones en pantalla para jugar.
 
 ---
 

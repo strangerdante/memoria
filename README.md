@@ -29,7 +29,6 @@ https://memoria-tailwind.netlify.app
    ```
 3. Abre el archivo index.html
 
-   ```
 4. Sigue las instrucciones en pantalla para jugar.
 
 ---

@@ -27,7 +27,7 @@ function crearTablero(tarjetas, categoria) {
       "shadow-lg",
       "relative",
       "cursor-pointer",
-      "card-inner",
+      "card-inner"
     );
     let bgColor = "bg-blue-500"; // Color fondo iconos
     if (categoria === "frutas") {
@@ -83,6 +83,16 @@ function verificarCoincidencia() {
 
 // Función para deshabilitar las cartas si coinciden
 function deshabilitarCartas() {
+  // Agregar la animación de coincidencia
+  primeraCarta.querySelector(".card-front").classList.add("coincidencia");
+  segundaCarta.querySelector(".card-front").classList.add("coincidencia");
+
+  // Remover la animación después de que termine
+  setTimeout(() => {
+    primeraCarta.querySelector(".card-front").classList.remove("coincidencia");
+    segundaCarta.querySelector(".card-front").classList.remove("coincidencia");
+  }, 600);
+
   primeraCarta.removeEventListener("click", girarCarta);
   segundaCarta.removeEventListener("click", girarCarta);
   reiniciarTablero();
@@ -112,7 +122,7 @@ function activarBoton(botonId) {
       "bg-transparent",
       "text-blue-500",
       "text-purple-500",
-      "text-cyan-500",
+      "text-cyan-500"
     );
   });
 

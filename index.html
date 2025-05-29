@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -33,6 +33,22 @@
       }
       .card-front {
         transform: rotateY(180deg);
+      }
+
+      @keyframes coincidencia {
+        0% {
+          transform: scale(1) rotateY(180deg);
+        }
+        50% {
+          transform: scale(1.2) rotateY(180deg);
+        }
+        100% {
+          transform: scale(1) rotateY(180deg);
+        }
+      }
+
+      .coincidencia {
+        animation: coincidencia 0.6s ease-in-out;
       }
     </style>
   </head>
